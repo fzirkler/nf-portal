@@ -1,0 +1,45 @@
+﻿@page
+@model NF_Portal.Pages.Programm.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Programm</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Programm.Id" />
+            <div class="form-group">
+                <label asp-for="Programm.Bezeichnung" class="control-label"></label>
+                <input asp-for="Programm.Bezeichnung" class="form-control" />
+                <span asp-validation-for="Programm.Bezeichnung" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Programm.Von" class="control-label"></label>
+                <input asp-for="Programm.Von" class="form-control" />
+                <span asp-validation-for="Programm.Von" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Programm.Bis" class="control-label"></label>
+                <input asp-for="Programm.Bis" class="form-control" />
+                <span asp-validation-for="Programm.Bis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

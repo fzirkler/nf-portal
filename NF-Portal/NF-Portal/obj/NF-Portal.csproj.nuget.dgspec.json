@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fabia\\Documents\\git\\NF-Portal\\NF-Portal\\NF-Portal.csproj": {}
+    "C:\\Users\\fabia\\source\\repos\\nf-portal\\NF-Portal\\NF-Portal\\NF-Portal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fabia\\Documents\\git\\NF-Portal\\NF-Portal\\NF-Portal.csproj": {
+    "C:\\Users\\fabia\\source\\repos\\nf-portal\\NF-Portal\\NF-Portal\\NF-Portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fabia\\Documents\\git\\NF-Portal\\NF-Portal\\NF-Portal.csproj",
+        "projectUniqueName": "C:\\Users\\fabia\\source\\repos\\nf-portal\\NF-Portal\\NF-Portal\\NF-Portal.csproj",
         "projectName": "NF-Portal",
-        "projectPath": "C:\\Users\\fabia\\Documents\\git\\NF-Portal\\NF-Portal\\NF-Portal.csproj",
+        "projectPath": "C:\\Users\\fabia\\source\\repos\\nf-portal\\NF-Portal\\NF-Portal\\NF-Portal.csproj",
         "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fabia\\Documents\\git\\NF-Portal\\NF-Portal\\obj\\",
+        "outputPath": "C:\\Users\\fabia\\source\\repos\\nf-portal\\NF-Portal\\NF-Portal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,34 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

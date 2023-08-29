@@ -1,0 +1,85 @@
+﻿@page
+@model NF_Portal.Pages.Veranstaltung.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Veranstaltung</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Veranstaltung.Id" />
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Id" class="control-label"></label>
+                <input asp-for="Veranstaltung.Id" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Name" class="control-label"></label>
+                <input asp-for="Veranstaltung.Name" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Termin" class="control-label"></label>
+                <input asp-for="Veranstaltung.Termin" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Termin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Ersatztermin" class="control-label"></label>
+                <input asp-for="Veranstaltung.Ersatztermin" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Ersatztermin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Auskunftsperson" class="control-label"></label>
+                <input asp-for="Veranstaltung.Auskunftsperson" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Auskunftsperson" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Telefon" class="control-label"></label>
+                <input asp-for="Veranstaltung.Telefon" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Telefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.IntroText" class="control-label"></label>
+                <input asp-for="Veranstaltung.IntroText" class="form-control" />
+                <span asp-validation-for="Veranstaltung.IntroText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Beschreibung" class="control-label"></label>
+                <input asp-for="Veranstaltung.Beschreibung" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Beschreibung" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Treffpunkt" class="control-label"></label>
+                <input asp-for="Veranstaltung.Treffpunkt" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Treffpunkt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Bemerkung" class="control-label"></label>
+                <input asp-for="Veranstaltung.Bemerkung" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Bemerkung" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Veranstaltung.Anmeldeschluss" class="control-label"></label>
+                <input asp-for="Veranstaltung.Anmeldeschluss" class="form-control" />
+                <span asp-validation-for="Veranstaltung.Anmeldeschluss" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

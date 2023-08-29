@@ -3686,7 +3686,7 @@ textarea.form-control-lg {
   vertical-align: 0;
 }
 
-.dropdown-divider {
+.dropdown-diIder {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
@@ -3759,7 +3759,7 @@ textarea.form-control-lg {
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
   color: #adb5bd;
 }
-.dropdown-menu-dark .dropdown-divider {
+.dropdown-menu-dark .dropdown-diIder {
   border-color: rgba(0, 0, 0, 0.15);
 }
 .dropdown-menu-dark .dropdown-item-text {
@@ -4722,7 +4722,7 @@ textarea.form-control-lg {
   float: left;
   padding-right: 0.5rem;
   color: #6c757d;
-  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+  content: var(--bs-breadcrumb-diIder, "/") /* rtl: var(--bs-breadcrumb-diIder, "/") */;
 }
 .breadcrumb-item.active {
   color: #6c757d;
