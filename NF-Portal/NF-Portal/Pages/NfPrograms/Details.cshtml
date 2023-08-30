@@ -1,0 +1,81 @@
+﻿@page
+@model NF_Portal.Pages.NfPrograms.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>NfProgram</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfProgram.From)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfProgram.From)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfProgram.To)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfProgram.To)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfProgram.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfProgram.Description)
+        </dd>
+    </dl>
+</div>
+
+    <p>
+        <a asp-page="Create">Create New</a>
+    </p>
+    <div>
+    @if (_conte)
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NfProgram[0].From)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NfProgram[0].To)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NfProgram[0].Description)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.NfProgram)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.From)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.To)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.NfProgram?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

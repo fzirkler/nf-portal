@@ -9,37 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NF_Portal
 build_property.RootNamespace = NF_Portal
-build_property.ProjectDir = C:\Users\fabia\Documents\git\NF-Portal\NF-Portal\
+build_property.ProjectDir = C:\Users\fabia\source\repos\nf-portal\NF-Portal\NF-Portal\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\fabia\Documents\git\NF-Portal\NF-Portal
+build_property.MSBuildProjectDirectory = C:\Users\fabia\source\repos\nf-portal\NF-Portal\NF-Portal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/fabia/Documents/git/NF-Portal/NF-Portal/Pages/Error.cshtml]
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabia/Documents/git/NF-Portal/NF-Portal/Pages/Index.cshtml]
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabia/Documents/git/NF-Portal/NF-Portal/Pages/Privacy.cshtml]
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfPrograms/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZQcm9ncmFtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfPrograms/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZQcm9ncmFtc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfPrograms/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZQcm9ncmFtc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfPrograms/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZQcm9ncmFtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfPrograms/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZQcm9ncmFtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabia/Documents/git/NF-Portal/NF-Portal/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabia/Documents/git/NF-Portal/NF-Portal/Pages/_ViewImports.cshtml]
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabia/Documents/git/NF-Portal/NF-Portal/Pages/_ViewStart.cshtml]
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabia/Documents/git/NF-Portal/NF-Portal/Pages/Shared/_Layout.cshtml]
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-16uxdmi99b
