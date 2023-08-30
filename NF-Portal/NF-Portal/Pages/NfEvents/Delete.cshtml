@@ -1,0 +1,88 @@
+﻿@page
+@model NF_Portal.Pages.NfEvents.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>NfEvent</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.EventDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.EventDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.AdditionalDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.AdditionalDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Person)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Person)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.IntroText)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.IntroText)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Location)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.AdditionalInformation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.AdditionalInformation)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Deadline)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Deadline)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.NfProgram)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.NfProgram.Id)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="NfEvent.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="../NfPrograms/Details" asp-route-id="@Model.NfEvent.NfProgramId">Back to List</a>
+    </form>
+</div>

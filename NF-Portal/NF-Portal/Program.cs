@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var serverVersion = new MariaDbServerVersion(new Version(10, 4, 24));
 
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<NfContext>(options =>
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<NfContext>(options =>
         .LogTo(Console.WriteLine, LogLevel.Information)
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors()
+        .UseLazyLoadingProxies()
     );
 
 var app = builder.Build();

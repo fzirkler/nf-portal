@@ -24,6 +24,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfEvents/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZFdmVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfEvents/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZFdmVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfEvents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZFdmVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfEvents/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZFdmVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fabia/source/repos/nf-portal/NF-Portal/NF-Portal/Pages/NfPrograms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmZQcm9ncmFtc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

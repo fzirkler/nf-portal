@@ -36,8 +36,10 @@ namespace NF_Portal.Pages.NfPrograms
             }
             else 
             {
-                
+                NfProgram = nfprogram;
             }
+
+           
             return Page();
         }
     }

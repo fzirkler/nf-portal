@@ -82,6 +82,9 @@ namespace NF_Portal.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<bool>("Editable")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<DateTime>("From")
                         .HasColumnType("datetime(6)");
 
@@ -95,11 +98,13 @@ namespace NF_Portal.Migrations
 
             modelBuilder.Entity("NF_Portal.Models.NfEvent", b =>
                 {
-                    b.HasOne("NF_Portal.Models.NfProgram", null)
+                    b.HasOne("NF_Portal.Models.NfProgram", "NfProgram")
                         .WithMany("NfEvents")
                         .HasForeignKey("NfProgramId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("NfProgram");
                 });
 
             modelBuilder.Entity("NF_Portal.Models.NfProgram", b =>

@@ -31,50 +31,68 @@
         </dd>
     </dl>
 </div>
+<div>
+    <h4>Veranstaltungen</h4>
+    @if (Model.NfProgram.Editable)
+    {
+        <p>
+            <a asp-page="../NfEvents/Create" asp-route-programId="@Model.NfProgram.Id"> Create New</a>
+        </p>
+    }
 
-    <p>
-        <a asp-page="Create">Create New</a>
-    </p>
-    <div>
-    @if (_conte)
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.NfProgram[0].From)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.NfProgram[0].To)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.NfProgram[0].Description)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.NfProgram)
-            {
+   @if (Model.NfProgram.NfEvents.Count > 0)
+    {
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.From)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.To)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Description)
-                    </td>
-                    <td>
-                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-                    </td>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NfProgram.NfEvents.ToList()[0].Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NfProgram.NfEvents.ToList()[0].EventDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NfProgram.NfEvents.ToList()[0].Person)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NfProgram.NfEvents.ToList()[0].IntroText)
+                    </th>
+                    <th></th>
                 </tr>
-            }
-        </tbody>
-    </table>
-    </div>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.NfProgram.NfEvents)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Person)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IntroText)
+                        </td>
+                        <td>
+                            @if (Model.NfProgram.Editable)
+                            {
+                                <span>
+                                    <a asp-page="../NfEvents/Edit" asp-route-id="@item.Id">Edit</a> |
+                                    <a asp-page="../NfEvents/Delete" asp-route-id="@item.Id">Delete</a> |
+                                </span>
+                            }                           
+                            <a asp-page="../NfEvents/Details" asp-route-id="@item.Id">Details</a> 
+                            
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.NfProgram?.Id">Edit</a> |
     <a asp-page="./Index">Back to List</a>

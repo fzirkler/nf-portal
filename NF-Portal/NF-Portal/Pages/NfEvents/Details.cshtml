@@ -1,0 +1,83 @@
+﻿@page
+@model NF_Portal.Pages.NfEvents.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>NfEvent</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.EventDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.EventDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.AdditionalDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.AdditionalDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Person)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Person)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.IntroText)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.IntroText)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Location)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.AdditionalInformation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.AdditionalInformation)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NfEvent.Deadline)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NfEvent.Deadline)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (Model.NfEvent.NfProgram.Editable) {
+        <span>
+            <a asp-page="./Edit" asp-route-id="@Model.NfEvent?.Id">Edit</a> |
+        </span>
+    }
+    <a asp-page="../NfPrograms/Details" asp-route-id="@Model.NfEvent?.NfProgramId">Back to List</a>
+</div>

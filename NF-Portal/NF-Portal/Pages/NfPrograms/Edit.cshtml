@@ -29,6 +29,11 @@
                 <input asp-for="NfProgram.Description" class="form-control" />
                 <span asp-validation-for="NfProgram.Description" class="text-danger"></span>
             </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="NfProgram.Editable" /> @Html.DisplayNameFor(model => model.NfProgram.Editable)
+                </label>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

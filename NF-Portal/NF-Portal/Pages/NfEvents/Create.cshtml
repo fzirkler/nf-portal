@@ -1,0 +1,82 @@
+﻿@page
+@model NF_Portal.Pages.NfEvents.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>NfEvent</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NfEvent.Name" class="control-label"></label>
+                <input asp-for="NfEvent.Name" class="form-control" />
+                <span asp-validation-for="NfEvent.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.EventDate" class="control-label"></label>
+                <input asp-for="NfEvent.EventDate" class="form-control" />
+                <span asp-validation-for="NfEvent.EventDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.AdditionalDate" class="control-label"></label>
+                <input asp-for="NfEvent.AdditionalDate" class="form-control" />
+                <span asp-validation-for="NfEvent.AdditionalDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.Person" class="control-label"></label>
+                <input asp-for="NfEvent.Person" class="form-control" />
+                <span asp-validation-for="NfEvent.Person" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.Phone" class="control-label"></label>
+                <input asp-for="NfEvent.Phone" class="form-control" />
+                <span asp-validation-for="NfEvent.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.IntroText" class="control-label"></label>
+                <input asp-for="NfEvent.IntroText" class="form-control" />
+                <span asp-validation-for="NfEvent.IntroText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.Description" class="control-label"></label>
+                <input asp-for="NfEvent.Description" class="form-control" />
+                <span asp-validation-for="NfEvent.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.Location" class="control-label"></label>
+                <input asp-for="NfEvent.Location" class="form-control" />
+                <span asp-validation-for="NfEvent.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.AdditionalInformation" class="control-label"></label>
+                <input asp-for="NfEvent.AdditionalInformation" class="form-control" />
+                <span asp-validation-for="NfEvent.AdditionalInformation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NfEvent.Deadline" class="control-label"></label>
+                <input asp-for="NfEvent.Deadline" class="form-control" />
+                <span asp-validation-for="NfEvent.Deadline" class="text-danger"></span>
+            </div>
+            
+            <input type="hidden" asp-for="NfEvent.NfProgramId" class ="form-control" asp-items="ViewBag.NfProgramId"></input>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
